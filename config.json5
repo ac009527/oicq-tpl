@@ -1,0 +1,19 @@
+{
+    "account": "2832343018",
+    "password": "ZXC15572080376i",
+    "platform": 5,
+    "adminIds": [
+        2253136143
+    ],
+    "qqBot": {
+        "request.friend": true, // 自动同意好友请求
+        "request.group.invite": true, // 同意群邀请
+        "request.group.add": true, // 同意加群申请，拒绝
+    },
+    "aiDraw": {
+        "reply": "draw ", // 触发画画关键词
+        "defaultPrompt": "masterpiece, best quality", // 默认描述
+        //默认负面描述
+        "defaultNegativePrompt": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry",
+    }
+}
