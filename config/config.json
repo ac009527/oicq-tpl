@@ -2,9 +2,6 @@
     "account": "2832343018",
     "password": "ZXC15572080376i",
     "platform": 5,
-    "adminIds": [
-        2253136143
-    ],
     "qqBot": {
         "request.friend": true, // 自动同意好友请求
         "request.group.invite": true, // 同意群邀请

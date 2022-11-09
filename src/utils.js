@@ -1,9 +1,9 @@
 
 
-const axios = require('axios')
-const fs = require('fs')
-const { config } = require('./index')
-const getImg = (str) => {
+import axios from 'axios'
+import fs from 'fs'
+import {config} from './index.js'
+export const getImg = (str) => {
     return axios.post('http://region-41.seetacloud.com:40809/sdapi/v1/txt2img', {
         "prompt": config.defaultPrompt + "," + str,
         "negative_prompt": config.defaultNegativePrompt,
@@ -20,12 +20,10 @@ const getImg = (str) => {
 }
 
 
-const base64ToBuffer = (base64) => {
+export const base64ToBuffer = (base64) => {
     let source = base64;
     if (/\,/.test(base64)) {
         source = base64.split(',')[1];
     }
     return Buffer.from(source, 'base64');
 }
-exports.getImg = getImg
-exports.base64ToBuffer = base64ToBuffer

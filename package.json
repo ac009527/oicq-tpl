@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "node ./index.js"
   },
@@ -11,7 +12,11 @@
   "dependencies": {
     "async-limiter": "^2.0.0",
     "axios": "^1.1.3",
+    "better-sqlite3": "^7.6.2",
     "json5": "^2.2.1",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "lowdb": "^5.0.5",
     "oicq": "^2.2.0",
     "pino": "^8.7.0",
     "sqlite3": "^5.1.2"
